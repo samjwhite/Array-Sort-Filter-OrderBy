@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>The Challenge</title>
+</head>
+
+<body class="bg-body">
+
+
+    <div class="container-sm mt-5 shadow-lg  mb-2 bg-body rounded-3 vertical-center">
+        <div class="row">
+            <h1 class="display-5 bg-primary  p-3 text-white rounded-top ">The Challenge</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-6 ">
+                <div id="initialTable">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="col-md-12 ">
+                    <form class="needs-validation" action="#">
+                        <div class="card">
+                            <h5 class="card-header">Add Data</h5>
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-8 mb-2">
+                                        <label for="inputEmail" class="form-label">Email: </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="inputEmailPrepend">@</span>
+                                            <input type="email" class="form-control" id="inputEmail"
+                                                placeholder="user@email.com" aria-describedby="inputEmailPrepend"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputTasksCount" class="form-label">Tasks Completed: </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="inputCountPrepend">#</span>
+                                            <input type="number" class="form-control" id="inputTasksCount"
+                                                placeholder="0" min="0" aria-describedby="inputCountPrepend" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-footer ">
+                                <button type="submit" class="btn btn-lg btn-outline-success"
+                                    onclick="addData()">Add</button>
+                                <button type="reset" class="btn btn-lg btn-outline-danger">Clear</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-12 mt-5 mb-4">
+
+                    <div class="card">
+                        <h5 class="card-header">Filter Data</h5>
+                        <div class="card-body">
+
+                            <div class="col-md-12">
+                                <label for="inputTasksCount" class="form-label">Min completed tasks: </label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputCountPrepend">#</span>
+                                    <input type="number" class="form-control" id="inputTasksFilter"
+                                        placeholder="Example: 10" min="0" aria-describedby="inputCountPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <button class="btn btn-lg btn-primary" id="btnFilter">Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row mt-3">
+        <p class="d-flex justify-content-center color-secondary">Copyright ©️ 2022 Serge Riazanov</p>
+       
+    </div>
+    
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
